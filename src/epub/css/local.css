@@ -1,5 +1,6 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
+@namespace xml "http://www.w3.org/XML/1998/namespace";
 
 /* letters */
 [epub|type~="z3998:letter"] header{
@@ -73,3 +74,9 @@ p[epub|type~="z3998:subsection"] {
 	text-align: center;
 }
 /* end inscription blockquote */
+
+/* language styling */
+body [xml|lang]{
+	font-style: italic;
+}
+/* end language styling */
