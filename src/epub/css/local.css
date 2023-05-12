@@ -54,8 +54,8 @@ p span.i1{
 }
 /* end all epigraphs */
 
-/* letter subsection */
-[epub|type~="z3998:subsection"]{
+/* subsection */
+p[epub|type~="z3998:subsection"] {
 	font-variant: small-caps;
 	margin-top: 1em;
 	text-align: center;
