@@ -67,3 +67,9 @@ p[epub|type~="z3998:subsection"] {
 	text-indent: initial;
 }
 /* end letter subsection */
+
+/* inscription blockquote */
+#chapter-40 blockquote{
+	text-align: center;
+}
+/* end inscription blockquote */
