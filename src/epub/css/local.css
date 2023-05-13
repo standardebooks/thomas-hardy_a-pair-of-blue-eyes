@@ -85,3 +85,18 @@ body [xml|lang]{
 	font-style: italic;
 }
 /* end language styling */
+
+/* preface */
+#preface footer p{
+	text-align: left;
+	text-indent: 1em;
+}
+
+#preface-1 {
+	margin-top: 1em;
+}
+
+#preface-1 footer p:first-child{
+	text-align: right;
+}
+/* end preface */
