@@ -60,6 +60,14 @@ p span.i1{
 }
 /* end all epigraphs */
 
+/* postscript */
+[epub|type~="z3998:postscript"]{
+	margin-top: 1em;
+	text-align: initial;
+	text-indent: 0;
+}
+/* end postscript */
+
 /* subsection */
 p[epub|type~="z3998:subsection"] {
 	font-variant: small-caps;
@@ -87,16 +95,8 @@ body [xml|lang]{
 /* end language styling */
 
 /* preface */
-#preface footer p{
-	text-align: left;
-	text-indent: 1em;
-}
-
-#preface-1 {
-	margin-top: 1em;
-}
-
-#preface-1 footer p:first-child{
+#preface [epub|type~="z3998:signature"]{
 	text-align: right;
+	margin-top: 1em;
 }
 /* end preface */
