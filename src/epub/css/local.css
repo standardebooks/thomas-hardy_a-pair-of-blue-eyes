@@ -67,6 +67,11 @@ p[epub|type~="z3998:subsection"] {
 	text-align: center;
 	text-indent: initial;
 }
+
+#dramatis-personae [epub|type~="z3998:subsection"] + p{
+	text-align: center;
+	text-indent: initial;
+}
 /* end letter subsection */
 
 /* inscription blockquote */
