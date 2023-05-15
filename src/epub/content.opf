@@ -52,7 +52,6 @@
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/224</dc:source>
 		<dc:source>https://archive.org/details/pairofblueeyes00hardrich</dc:source>
-		<dc:source>https://archive.org/details/pairofblueeyes00hard_0</dc:source>
 		<meta property="se:production-notes">The scan that most closely aligned with the transcription (Harper and brothers, 1895) was used for checking accuracy. Different editions show minor textual and punctuation changes.</meta>
 		<meta property="se:word-count">WORD_COUNT</meta>
 		<meta property="se:reading-ease.flesch">READING_EASE</meta>
@@ -64,6 +63,7 @@
 		<meta property="se:url.authority.nacoaf" refines="#author">http://id.loc.gov/authorities/names/n79046230</meta>
 		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
 		<meta property="se:role" refines="#author" scheme="marc:relators">wpr</meta>
+		<meta property="se:role" refines="#author" scheme="marc:relators">ann</meta>
 		<dc:contributor id="artist">Constant Mayer</dc:contributor>
 		<meta property="file-as" refines="#artist">Mayer, Constant</meta>
 		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">https://en.wikipedia.org/wiki/Constant_Mayer</meta>
