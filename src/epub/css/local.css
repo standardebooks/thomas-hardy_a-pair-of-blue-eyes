@@ -74,7 +74,7 @@ p span.i1{
 /* end postscript */
 
 /* subsection */
-p[epub|type~="z3998:subsection"] {
+p[epub|type~="z3998:subsection"]{
 	font-variant: small-caps;
 	margin-top: 1em;
 	text-align: center;
@@ -101,7 +101,7 @@ body [xml|lang]{
 
 /* preface */
 #preface [epub|type~="z3998:signature"]{
-	text-align: right;
 	margin-top: 1em;
+	text-align: right;
 }
 /* end preface */
