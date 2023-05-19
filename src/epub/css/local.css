@@ -2,8 +2,17 @@
 @namespace epub "http://www.idpf.org/2007/ops";
 @namespace xml "http://www.w3.org/XML/1998/namespace";
 
+/* header */
+header{
+	font-variant: small-caps;
+	margin: 1em;
+	text-align: center;
+}
+/* end header */
+
 /* letters */
 [epub|type~="z3998:letter"] header{
+	font-variant: normal;
 	text-align: right;
 }
 
@@ -60,10 +69,62 @@ p span.i1{
 /* all epigraphs */
 [epub|type~="epigraph"]{
 	font-style: italic;
+	font-variant: normal;
 	hyphens: none;
 	-epub-hyphens: none;
 }
 /* end all epigraphs */
+
+/* full-page epigraphs */
+section[epub|type~="epigraph"]{
+	text-align: center;
+}
+
+section[epub|type~="epigraph"] > *{
+	display: inline-block;
+	margin: auto;
+	margin-top: 3em;
+	max-width: 80%;
+	text-align: initial;
+}
+
+@supports(display: flex){
+	section[epub|type~="epigraph"]{
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: calc(98vh - 3em);
+		padding-top: 3em;
+	}
+
+	section[epub|type~="epigraph"] > *{
+		margin: 0;
+	}
+}
+/* end full-page epigraphs */
+
+/* dramatis personae */
+[epub|type~="z3998:dramatis-personae"]{
+	text-align: center;
+}
+
+[epub|type~="z3998:dramatis-personae"] p{
+	text-indent: 0;
+}
+
+[epub|type~="z3998:dramatis-personae"] ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+[epub|type~="z3998:dramatis-personae"] ul li{
+	font-style: italic;
+	margin: 1em;
+}
+/* end dramatis personae */
 
 /* postscript */
 [epub|type~="z3998:postscript"]{
@@ -73,20 +134,6 @@ p span.i1{
 }
 /* end postscript */
 
-/* subsection */
-p[epub|type~="z3998:subsection"]{
-	font-variant: small-caps;
-	margin-top: 1em;
-	text-align: center;
-	text-indent: initial;
-}
-
-#dramatis-personae [epub|type~="z3998:subsection"] + p{
-	text-align: center;
-	text-indent: initial;
-}
-/* end letter subsection */
-
 /* inscription blockquote */
 #chapter-40 blockquote{
 	text-align: center;
@@ -94,7 +141,7 @@ p[epub|type~="z3998:subsection"]{
 /* end inscription blockquote */
 
 /* language styling */
-body [xml|lang]{
+blockquote[xml|lang]{
 	font-style: italic;
 }
 /* end language styling */
@@ -105,3 +152,10 @@ body [xml|lang]{
 	text-align: right;
 }
 /* end preface */
+
+/* special letter header */
+#chapter-2 header p:first-child{
+	margin-bottom: 1em;
+	text-align: center;
+}
+/* end special letter header */
