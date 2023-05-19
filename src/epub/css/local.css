@@ -159,3 +159,11 @@ blockquote[xml|lang]{
 	text-align: center;
 }
 /* end special letter header */
+
+#dramatis-personae header{
+	margin-top: 2em;
+}
+
+#dramatis-personae header + p{
+	margin-top: 1em;
+}
