@@ -3,7 +3,8 @@
 @namespace xml "http://www.w3.org/XML/1998/namespace";
 
 /* header */
-header{
+header,
+#chapter-2 blockquote header p:first-child{
 	font-variant: small-caps;
 	margin: 1em;
 	text-align: center;
@@ -13,6 +14,7 @@ header{
 /* letters */
 [epub|type~="z3998:letter"] header{
 	font-variant: normal;
+	margin: 0;
 	text-align: right;
 }
 
@@ -29,11 +31,6 @@ footer{
 [epub|type~="z3998:salutation"],
 [epub|type~="z3998:signature"]{
 	font-variant: small-caps;
-}
-
-#chapter-20 [epub|type~="z3998:letter"] p{
-	margin-top: 1em;
-	text-indent: 0;
 }
 /* end letters */
 
@@ -105,6 +102,21 @@ section[epub|type~="epigraph"] > *{
 }
 /* end full-page epigraphs */
 
+/* epigraphs in section headers */
+section > header [epub|type~="epigraph"]{
+	display: inline-block;
+	margin: auto;
+	max-width: 80%;
+	text-align: initial;
+}
+
+@supports(display: table){
+	section > header [epub|type~="epigraph"]{
+		display: table;
+	}
+}
+/* end epigraphs in section headers */
+
 /* dramatis personae */
 [epub|type~="z3998:dramatis-personae"]{
 	text-align: center;
@@ -124,11 +136,15 @@ section[epub|type~="epigraph"] > *{
 	font-style: italic;
 	margin: 1em;
 }
+
+[epub|type~="z3998:dramatis-personae"] ul + section{
+	margin-top: 2em;
+}
 /* end dramatis personae */
 
 /* postscript */
 [epub|type~="z3998:postscript"]{
-	margin-top: 1em;
+	margin: 1em 0 1em 0;
 	text-align: initial;
 	text-indent: 0;
 }
@@ -145,25 +161,3 @@ blockquote[xml|lang]{
 	font-style: italic;
 }
 /* end language styling */
-
-/* preface */
-#preface [epub|type~="z3998:signature"]{
-	margin-top: 1em;
-	text-align: right;
-}
-/* end preface */
-
-/* special letter header */
-#chapter-2 header p:first-child{
-	margin-bottom: 1em;
-	text-align: center;
-}
-/* end special letter header */
-
-#dramatis-personae header{
-	margin-top: 2em;
-}
-
-#dramatis-personae header + p{
-	margin-top: 1em;
-}
