@@ -2,8 +2,8 @@
 <package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="se: https://standardebooks.org/vocab/1.0" unique-identifier="uid" version="3.0" xml:lang="en-US">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 		<dc:identifier id="uid">url:https://standardebooks.org/ebooks/thomas-hardy/a-pair-of-blue-eyes</dc:identifier>
-		<dc:date>1900-01-01T00:00:00Z</dc:date>
-		<meta property="dcterms:modified">1900-01-01T00:00:00Z</meta>
+		<dc:date>2023-05-22T17:47:46Z</dc:date>
+		<meta property="dcterms:modified">2023-05-22T17:47:46Z</meta>
 		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
 		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
 		<meta property="file-as" refines="#publisher">Standard Ebooks</meta>
@@ -47,13 +47,13 @@
 		<dc:description id="description">A vicar’s daughter becomes engaged to two men, and has not told them of each other.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
 			&lt;p&gt;Young Elfride falls in love for the first time with an architect who is sent to make plans to renovate the local church. She supposes Stephen to be a professional man from London, but finds he comes from more humble origins. Stephen must go away and make something of himself before he can claim her. Circumstances change in his absence, and Elfride must decide if she will keep her pledge to marry Stephen.&lt;/p&gt;
-			&lt;p&gt;This is the third novel from &lt;a href="https://standardebooks.org/ebooks/thomas-hardy"&gt;Thomas Hardy&lt;/a&gt;, and the first one under his own name at initial publication. It first appeared as a serial, and is considered a minor work. The plot device of “cliffhanger” is supposed to have originated with the scene of a protagonist hanging over the edge of a cliff.&lt;/p&gt;
+			&lt;p&gt;&lt;i&gt;A Pair of Blue Eyes&lt;/i&gt; is &lt;a href="https://standardebooks.org/ebooks/thomas-hardy"&gt;Thomas Hardy’s&lt;/a&gt; third novel, and the first one to bear his real name when it was first published. The novel was first published as a serial, and the “cliffhanger” is supposed to have been named after a scene in which a character is left hanging over the edge of a cliff—while readers are left waiting for the next chapter to be serialized.&lt;/p&gt;
 		</meta>
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/224</dc:source>
 		<dc:source>https://archive.org/details/pairofblueeyes00hard_0</dc:source>
-		<meta property="se:word-count">WORD_COUNT</meta>
-		<meta property="se:reading-ease.flesch">READING_EASE</meta>
+		<meta property="se:word-count">132953</meta>
+		<meta property="se:reading-ease.flesch">72.56</meta>
 		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/A_Pair_of_Blue_Eyes</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/thomas-hardy_a-pair-of-blue-eyes</meta>
 		<dc:creator id="author">Thomas Hardy</dc:creator>
@@ -80,6 +80,10 @@
 		<meta property="se:role" refines="#producer-1" scheme="marc:relators">mrk</meta>
 		<meta property="se:role" refines="#producer-1" scheme="marc:relators">pfr</meta>
 		<meta property="se:role" refines="#producer-1" scheme="marc:relators">tyg</meta>
+		<dc:contributor id="producer-2">Emma Sweeney</dc:contributor>
+		<meta property="file-as" refines="#producer-2">Sweeney, Emma</meta>
+		<meta property="se:url.homepage" refines="#producer-2">https://www.linkedin.com/in/emma-sweeney-554927190/</meta>
+		<meta property="role" refines="#producer-2" scheme="marc:relators">pfr</meta>
 	</metadata>
 	<manifest>
 		<item href="css/core.css" id="core.css" media-type="text/css"/>
