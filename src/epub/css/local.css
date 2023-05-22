@@ -3,8 +3,8 @@
 @namespace xml "http://www.w3.org/XML/1998/namespace";
 
 /* header */
-header,
-#chapter-2 blockquote header p:first-child{
+#chapter-2 blockquote header p:first-child,
+#chapter-12 blockquote ~ blockquote header{
 	font-variant: small-caps;
 	margin: 1em;
 	text-align: center;
@@ -13,8 +13,6 @@ header,
 
 /* letters */
 [epub|type~="z3998:letter"] header{
-	font-variant: normal;
-	margin: 0;
 	text-align: right;
 }
 
@@ -135,10 +133,6 @@ section > header [epub|type~="epigraph"]{
 [epub|type~="z3998:dramatis-personae"] ul li{
 	font-style: italic;
 	margin: 1em;
-}
-
-[epub|type~="z3998:dramatis-personae"] ul + section{
-	margin-top: 2em;
 }
 /* end dramatis personae */
 
