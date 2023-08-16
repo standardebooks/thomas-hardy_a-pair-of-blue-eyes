@@ -2,7 +2,7 @@
 <se-lint-ignore>
 	<file path="chapter-9.xhtml">
 		<ignore>
-			<code>t-042</code>
+			<code>y-031</code>
 			<reason>Word enclosed in quotes that is not dialogue</reason>
 		</ignore>
 	</file>
