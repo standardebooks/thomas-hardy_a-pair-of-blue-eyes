@@ -45,6 +45,8 @@
 		<meta property="authority" refines="#subject-5">LCSH</meta>
 		<meta property="term" refines="#subject-5">sh2008119358</meta>
 		<meta property="se:subject">Fiction</meta>
+		<meta id="collection-1" property="belongs-to-collection">Wessex</meta>
+		<meta property="collection-type" refines="#collection-1">series</meta>
 		<dc:description id="description">A vicar’s daughter becomes engaged to two men, and has not told them of each other.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
 			&lt;p&gt;Young Elfride falls in love for the first time with an architect who is sent to make plans to renovate the local church. She supposes Stephen to be a professional man from London, but finds he comes from more humble origins. Stephen must go away and make something of himself before he can claim her. Circumstances change in his absence, and Elfride must decide if she will keep her pledge to marry Stephen.&lt;/p&gt;
