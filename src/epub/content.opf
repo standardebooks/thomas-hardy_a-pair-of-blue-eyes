@@ -55,7 +55,7 @@
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/224</dc:source>
 		<dc:source>https://archive.org/details/pairofblueeyes00hard_0</dc:source>
-		<meta property="se:word-count">132943</meta>
+		<meta property="se:word-count">131237</meta>
 		<meta property="se:reading-ease.flesch">72.56</meta>
 		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/A_Pair_of_Blue_Eyes</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/thomas-hardy_a-pair-of-blue-eyes</meta>
